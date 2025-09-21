@@ -1,0 +1,154 @@
+<!DOCTYPE html>   <!--Categories.html-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Categories - My Modern Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D95BSXW6K6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D95BSXW6K6');
+    </script>
+    <style>
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .category-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            padding: 30px 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 180px;
+            /* Ensure cards have some height */
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--hover-shadow);
+        }
+
+        .category-card a {
+            /* Make the whole card clickable for text */
+            color: var(--secondary-color);
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8em;
+            font-weight: 700;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            position: relative;
+            padding-bottom: 5px;
+            /* Space for underline */
+        }
+
+        .category-card a:hover {
+            color: var(--primary-color);
+        }
+
+        .category-card a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: var(--primary-color);
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .category-card a:hover::after {
+            width: 70%;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .categories-grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="blog-title"><a href="index.html">My Modern Blog</a></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container content-page">
+        <h2>Explore Topics</h2>
+
+        <div class="categories-grid">
+            <div class="category-card">
+                <a href="category-ai.html">Artificial Intelligence</a>
+            </div>
+            <div class="category-card">
+                <a href="category-cybersecurity.html">Cybersecurity</a>
+            </div>
+            <div class="category-card">
+                <a href="category-webdev.html">Web Development</a>
+            </div>
+            <div class="category-card">
+                <a href="category-tech-trends.html">Tech Trends</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 My Modern Blog. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://twitter.com/Niraj_856" target="_blank" aria-label="Twitter"><img
+                        src="https://img.icons8.com/ios-filled/24/ffffff/twitter--v1.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/in/niraj-acharjya-0a9529381" target="_blank"
+                    aria-label="LinkedIn"><img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png"
+                        alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/Niraj_856" target="_blank" aria-label="Instagram"><img
+                        src="https://img.icons8.com/ios-filled/24/ffffff/instagram--v1.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
