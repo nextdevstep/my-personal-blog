@@ -26,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #fdf6fd;
 }
 
 .container {
@@ -60,11 +61,12 @@ p {
 
 /* Header */
 .main-header {
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.59);
     color: var(--light-text-color);
     padding: 20px 0;
     box-shadow: var(--shadow);
     position: sticky;
+    width: 100%;
     top: 0;
     z-index: 1000;
 }
