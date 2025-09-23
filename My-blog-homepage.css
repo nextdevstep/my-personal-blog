@@ -1,0 +1,234 @@
+body {
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(240, 234, 240);
+    max-width: 100%;
+    
+}
+
+.container {
+    width: 1200px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 50px;
+
+}
+
+.My-blog {
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 8px;
+    color: #ffffff;
+}
+
+.pad {
+    padding-right: 300px;
+}
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.554);
+    max-width: 1400px;
+    max-height: 100px;
+    width: 100%;
+    height: 90px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    gap: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    
+    
+
+}
+
+/* nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+    /* Example hover color 
+} */
+
+main {
+    padding: 30px;
+    padding-top: 100px;
+}
+
+.main-content {
+    position: relative;
+    display: flex;
+    min-height: 600px;
+    /* Adjust as needed */
+}
+
+.image-section {
+    flex: 1;
+    position: relative;
+    max-width: 100%;
+    margin: 0%;
+}
+
+.image-section img {
+    right: 0%;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    right: 2%;
+    top: 7%;
+    background-color: rgba(25, 49, 75, 0.84);
+    color: #dfdfdf;
+    padding: 40px 50px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 45%;
+    height: 60%;
+    box-sizing: border-box;
+}
+
+.text-overlay h1 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+}
+
+.text-overlay p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.read-more-btn {
+    background-color: #ffffff;
+    color: #0d2d5e;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-self: flex-start;
+    /* Align button to the start */
+}
+
+.read-more-btn:hover {
+    background-color: #f0f0f0;
+    color: #0d2d5e;
+}
+
+.social-icons {
+    margin-top: auto;
+    /* Pushes social icons to the bottom */
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #cccccc;
+}
+
+
+/* Responsive adjustments for smaller screens (basic example) */
+@media (max-width: 992px) {
+    .container {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .image-section {
+        max-width: 100%;
+        height: 300px;
+        /* Fixed height for image on smaller screens */
+    }
+
+    .text-overlay {
+        position: static;
+        width: 100%;
+        padding: 40px 30px;
+        border-radius: 0 0 8px 8px;
+    }
+
+}
+
+header {
+    flex-direction: column;
+    padding: 20px;
+}
+
+nav ul {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+
+@media (max-width: 768px) {
+    .text-overlay h1 {
+        font-size: 32px;
+    }
+
+    .text-overlay p {
+        font-size: 14px;
+    }
+}
