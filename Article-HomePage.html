@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Article's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Article-HomePage.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="shape sun"></div>
+    <div class="shape cloud-1"></div>
+    <div class="shape cloud-2"></div>
+    <div class="shape cloud-3"></div>
+    <div class="star star-1"></div>
+    <div class="star star-2"></div>
+    <div class="star star-3"></div>
+    <div class="star star-4"></div>
+
+    <header>
+        <nav>
+            <div class="my-article">My Article</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="my-blog-homepage.html">My blogs</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger-menu" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Ideas, Trends & <span class="highlight">Perspectives</span></h1>
+                    <p>A collection of articles blending innovation, learning, and personal reflections.</p>
+                    <button class="cta-button">My Latest article &gt;</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="featured-logos">
+                <a href="#" target="_blank" aria-label="youtube"><img
+                        src="https://img.icons8.com/ios-filled/24/7a7a7a/youtube-play.png" alt="Youtube"></a>
+                <a href="https://www.linkedin.com/in/niraj-acharjya-0a9529381" target="_blank"
+                    aria-label="LinkedIn"><img src="https://img.icons8.com/ios-filled/24/7a7a7a/linkedin.png"
+                        alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/Niraj_856" target="_blank" aria-label="Instagram"><img
+                        src="https://img.icons8.com/ios-filled/24/7a7a7a/instagram-new.png" alt="Instagram"></a>
+            </div>
+
+              <section class="blog-posts" id="latest-posts-section">
+            <h3>Latest Posts</h3>
+            <div class="post-grid">
+                <article class="blog-post">
+                    <img src="images/image2.webp" alt="AI Impact on Jobs">
+                    <div class="post-content">
+                        <h4><a href="post-ai-jobs.html">The Impact of AI in Jobs: Pros and Cons</a></h4>
+                        <p class="post-meta">By Niraj Acharjya | September 20, 2025 | AI, Future Tech</p>
+                        <p>Diving into how artificial intelligence is reshaping the employment landscape, examining both
+                            its advantages and potential drawbacks.</p>
+                        <a href="post-ai-jobs.html" class="read-more">Read More &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="blog-post">
+                    <img src="images/image4.webp" alt="Space Exploration Boom Image">
+                    <div class="post-content">
+                        <h4><a href="post-space-exploration.html">Space Exploration Boom: Why 2025 Is a Turning Point
+                                for Humanity</a></h4>
+                        <p class="post-meta">By Niraj Acharjya | September 22, 2025 | Space, Tech Trends</p>
+                        <p>2025 is emerging as a pivotal year, marking a new era where government missions, private
+                            ventures, and international collaborations converge to redefine humanity's place in the
+                            cosmos.</p>
+                        <a href="post-space-exploration.html" class="read-more">Read More &rarr;</a>
+                    </div>
+                </article>
+                <article class="blog-post">
+                    <img src="images/cyber-security-fp-image8.webp" alt="Blog Post Image 3">
+                    <div class="post-content">
+                        <h4><a href="post-cybersecurity-in-ai-era.html">Cybersecurity in the Age of AI: Battling Digital
+                                Threats in 2025</a></h4>
+                        <p class="post-meta">By Niraj Acharjya | September 20, 2025 |Cybersecurity, Tech Trends </p>
+                        <p> AI is changing cybersecurity — powering smarter defenses but also creating new threats like
+                            deepfakes and adaptive malware....</p>
+                        <a href="post-cybersecurity-in-ai-era.html" class="read-more">Read More &rarr;</a>
+                    </div>
+                </article>
+        </section>
+        </footer>
+    </div>
+
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const nav = document.querySelector('nav');
+        hamburgerMenu.addEventListener('click', () => {
+            nav.classList.toggle('nav-open');
+        });
+    </script>
+
+</body>
+
+</html>
