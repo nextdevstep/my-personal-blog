@@ -1,73 +1,105 @@
-<!DOCTYPE html>      <!--About.html-->
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Niraj Acharjya - My Modern Blog</title>
+    <title>About Niraj's Modern Blog</title>
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D95BSXW6K6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+       
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; 
+            color: #4b5563; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-        gtag('config', 'G-D95BSXW6K6');
-    </script>
+        
+        header {
+            background-color: #1f2937;
+            color: #ffffff;
+            padding: 1rem 1.5rem;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+    </style>
 </head>
-
 <body>
-    <header class="main-header">
-        <div class="container">
-            <h1 class="blog-title"><a href="index.html">My Modern Blog</a></h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                     <li><a href="my-blog-homepage.html">My Blog</a></li>
-                     <li><a href="Article-HomePage.html">Article's</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+
+   
+    <header class="shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">My Modern Blog</h1>
+            <nav class="space-x-4 text-sm font-semibold">
+                <a href="index.html">Home</a>
+                <a href="articles.html">Articles</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
             </nav>
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </header>
 
-    <main class="container content-page">
-        <h2>About Me</h2>
-        <p>Hello! I'm **Niraj Acharjya**, a student deeply immersed in learning web development. This project is a
-            hands-on journey to understand the intricacies of how web pages work, which I believe is a crucial
-            foundation for my future goal: becoming a cybersecurity expert.</p>
-        <p>This blog serves as my platform to document my learning process, share insights, and discuss trending topics
-            in both web development and cybersecurity. My aim is to explore the dynamic landscape of technology, from
-            coding practices to the latest security vulnerabilities, and everything in between.</p>
-        <p>Join me as I explore the web, learn, and grow! Thanks for stopping by.</p>
-    </main>
+    <main class="about-container">
+        
+        <div class="profile-card">
+            <div class="profile-img-container">
+              
+                <img src="https://placehold.co/120x120/4f46e5/ffffff?text=NA" alt="Niraj Acharjya Avatar">
+            </div>
 
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2023 My Modern Blog. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" aria-label="Twitter"><img src="https://img.icons8.com/ios-filled/24/ffffff/twitter--v1.png"
-                        alt="Twitter"></a>
-                <a href="#" aria-label="LinkedIn"><img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png"
-                        alt="LinkedIn"></a>
-                <a href="#" aria-label="GitHub"><img src="https://img.icons8.com/ios-filled/24/ffffff/github.png"
-                        alt="GitHub"></a>
+            <h2>Niraj Acharjya</h2>
+            <p class="title">Student, Web Developer & Tech Enthusiast based in Assam, India</p>
+
+            <div class="mission-statement text-left">
+                <h3>My Mission</h3>
+                <p class="text-gray-600 mb-4">
+                    I started this blog to document my journey through college, tech learning, and development challenges. I share genuine, practical insights—not just theory—to help fellow beginners balance studies, build strong tech foundations, and stay consistent. This platform is a reflection of my growth and a space for mutual learning.
+                </p>
+
+                <h3>Core Focus Areas</h3>
+                <ul class="key-areas list-disc pl-5">
+                    <li>Front-end Development: Sharing tips, tutorials, and projects using HTML, CSS, and JavaScript.</li>
+                    <li>Academic & Tech Balance: Practical advice on time management and learning efficiently as a student.</li>
+                    <li>Blogging Consistency: Personal reflections and strategies on maintaining a high-quality publishing schedule.</li>
+                    <li>Emerging Technologies: Simple breakdowns of new tech trends and how they apply to beginners.</li>
+                </ul>
+                
+                <p class="text-xs text-gray-400 mt-6">
+                    This blog's content is based on personal research, experience, and learning resources, and is intended for informational and educational purposes only.
+                </p>
             </div>
         </div>
+    </main>
 
+    
+     <footer class="mt-auto bg-gray-100 p-4 text-center text-sm text-gray-500 border-t">
+        <div class="container mx-auto">
+            <p class="mb-2">
+                &copy; 2025 Niraj's Modern Blog. All rights reserved.
+            </p>
+            <div>  <a class="social-links" href="https://www.linkedin.com/in/niraj-acharjya-0a9529381" target="_blank"
+                    aria-label="LinkedIn"><img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png"
+                        alt="LinkedIn"></a>
+                        <!-- Instagram -->
+                        <a class="social-links" href="https://www.instagram.com/Niraj_856" target="_blank" aria-label="Instagram"><img
+                        src="https://img.icons8.com/ios-filled/24/ffffff/instagram--v1.png" alt="Instagram"></a></div>
+            <div class="space-x-4">
+                <a href="privacy.html" class="text-indigo-600 font-semibold">Privacy Policy</a>
+                <span class="text-gray-300">|</span>
+                <a href="terms.html" class="hover:text-indigo-600 transition">Terms of Service</a>
+                <span class="text-gray-300">|</span>
+                <a href="contact.html" class="hover:text-indigo-600 transition">Contact Us</a>
+                 <span class="text-gray-300">|</span>
+                <a href="about.html" class="hover:text-indigo-600 transition">About Us</a>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
-
 </html>

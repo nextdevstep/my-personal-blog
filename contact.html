@@ -1,172 +1,121 @@
-<!DOCTYPE html>    <!--Contact.html-->
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me - My Modern Blog</title>
+    <title>Contact Niraj Acharjya</title>
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D95BSXW6K6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-D95BSXW6K6');
-    </script>
+    <!-- Load Tailwind CSS for modern styling and responsiveness -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Specific styles for the contact page form */
-        .contact-form {
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 30px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: var(--shadow);
+        /* Optional: Sets the base font and ensures the page takes up the full viewport height */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-
-        .contact-form label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: var(--secondary-color);
+        /* Style for the social icons (using Tailwind classes for size and color) */
+        .social-icon {
+            transition: transform 0.2s ease-in-out;
         }
-
-        .contact-form input[type="text"],
-        .contact-form input[type="email"],
-        .contact-form textarea {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1em;
-            transition: border-color 0.3s ease;
-        }
-
-        .contact-form input[type="text"]:focus,
-        .contact-form input[type="email"]:focus,
-        .contact-form textarea:focus {
-            border-color: var(--primary-color);
-            outline: none;
-            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
-            /* Light blue shadow */
-        }
-
-        .contact-form textarea {
-            min-height: 150px;
-            resize: vertical;
-        }
-
-        .contact-form button {
-            background: var(--primary-color);
-            color: var(--light-text-color);
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1em;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-
-        .contact-form button:hover {
-            background-color: darken(var(--primary-color), 10%);
-            transform: translateY(-2px);
-        }
-
-        .contact-info-text {
-            text-align: center;
-            margin-top: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .contact-info-text p {
-            font-size: 1.1em;
-            margin-bottom: 10px;
-        }
-
-        .contact-info-text a {
-            font-weight: 600;
-        }
-
-        /* Responsive adjustments for the form */
-        @media (max-width: 768px) {
-            .contact-form {
-                margin: 20px auto;
-                padding: 20px;
-            }
+        .social-icon:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
+<body class="text-gray-800">
 
-<body>
-    <header class="main-header">
-        <div class="container">
-            <h1 class="blog-title"><a href="index.html">My Modern Blog</a></h1>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="my-blog-homepage.html">My Blog</a></li>
-                    <li><a href="Article-HomePage.html">Article's</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+    <!-- Header/Navigation Placeholder (Ensure you replace this with your actual navigation bar) -->
+    <header class="bg-white shadow-md p-4">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold text-indigo-600">My Modern Blog</h1>
+            <div class="space-x-4">
+                <a href="index.html" class="text-gray-600 hover:text-indigo-600">Home</a>
+                <a href="my-blog-homepage.html" class="text-gray-600 hover:text-indigo-600">Articles</a>
+                <a href="about.html" class="text-gray-600 hover:text-indigo-600">About</a>
+                <a href="contact.html" class="text-indigo-600 font-semibold">Contact</a>
+            </div>
+        </nav>
     </header>
 
-    <main class="container content-page">
-        <h2>Get in Touch</h2>
+    <!-- Main Content Area -->
+    <main class="container mx-auto p-6 md:p-12 flex-grow">
+        
+        <div class="max-w-3xl mx-auto bg-white p-8 md:p-10 shadow-xl rounded-lg border border-gray-100">
+            
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2 border-b pb-4">
+                Get In Touch with Niraj
+            </h2>
+            <p class="text-gray-500 mb-8">
+                I'm happy to connect regarding tech, web development, or blogging. Find my primary contact channels below.
+            </p>
 
-        <div class="contact-info-text">
-            <p>I'd love to hear from you! Whether you have feedback, questions, or just want to connect, feel free to
-                reach out.</p>
+            <!-- Contact Information Box -->
+            <div class="space-y-6">
 
-            <form action="#" method="POST" class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <!-- 1. Email (Most important for official contact) -->
+                <div class="flex items-start p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600 flex-shrink-0 mr-3 mt-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h14a2 2 0 002-2V8.118z" />
+                    </svg>
+                    <div>
+                        <p class="text-sm font-semibold text-gray-600 uppercase">Direct Email (Official)</p>
+                        <!-- Using mailto: makes it easy to click and send an email -->
+                        <a href="mailto:Nirajacharjya1112@gmail.com" class="text-lg font-medium text-indigo-700 hover:text-indigo-900 transition duration-150">
+                            Nirajacharjya1112@gmail.com
+                        </a>
+                        <p class="text-xs text-gray-400 mt-1">Please allow 24-48 hours for a response.</p>
+                    </div>
+                </div>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject">
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-    </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2023 My Modern Blog. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://twitter.com/Niraj_856" target="_blank" aria-label="Twitter"><img
-                        src="https://img.icons8.com/ios-filled/24/ffffff/twitter--v1.png" alt="Twitter"></a>
-                <a href="https://www.linkedin.com/in/niraj-acharjya-0a9529381" target="_blank"
+                <!-- 2. Social Media Links -->
+                <div class="p-4 bg-white rounded-lg">
+                    <p class="text-sm font-semibold text-gray-600 uppercase mb-4">Connect Professionally & Socially</p>
+                    <div class="flex space-x-6">
+                        
+                        <!-- LinkedIn -->
+                         <a class="social-links" href="https://www.linkedin.com/in/niraj-acharjya-0a9529381" target="_blank"
                     aria-label="LinkedIn"><img src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png"
                         alt="LinkedIn"></a>
-                <a href="https://www.instagram.com/Niraj_856" target="_blank" aria-label="Instagram"><img
+                        <!-- Instagram -->
+                        <a class="social-links" href="https://www.instagram.com/Niraj_856" target="_blank" aria-label="Instagram"><img
                         src="https://img.icons8.com/ios-filled/24/ffffff/instagram--v1.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Optional: Static text box if you don't use a form -->
+            <div class="mt-10 p-4 bg-yellow-50 rounded-lg text-sm text-yellow-700 border-l-4 border-yellow-500">
+                <p class="font-bold mb-1">💡 Pro Tip:</p>
+                <p><p>While the page does not use a submission form, the email link provides a direct and permanent point of contact for compliance checks and user support, addressing the Contact Us page requirement.</p>.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- 
+        *** ESSENTIAL Footer: Includes Legal Links ***
+        The links below must point to your actual Privacy Policy and Terms pages.
+    -->
+    <footer class="mt-auto bg-gray-100 p-4 text-center text-sm text-gray-500 border-t">
+        <div class="container mx-auto">
+            <p class="mb-2">
+                &copy; 2025 Niraj's Modern Blog. All rights reserved.
+            </p>
+            <div class="space-x-4">
+                <a href="privacy.html" class="hover:text-indigo-600 transition">Privacy Policy</a>
+                <span class="text-gray-300">|</span>
+                <a href="terms.html" class="hover:text-indigo-600 transition">Terms of Service</a>
+                <span class="text-gray-300">|</span>
+                <a href="contact.html" class="hover:text-indigo-600 transition">Contact Us</a>
+                <span class="text-gray-300">|</span>
+                <a href="about.html" class="hover:text-indigo-600 transition">About Us</a>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
-
 </html>
